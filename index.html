@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				var txt = "";
+				txt += "Width of div: " + $("#div1").width() + "<br>";
+				txt += "Height of div: " + $("#div1").height() + "<br>";
+				txt += "Outer width of div: " + $("#div1").outerWidth() + "<br>";
+				txt += "Outer height of div: " + $("#div1").outerHeight();
+				$("#div1").html(txt);
+			});
+		});
+	</script>
+	<style>
+		#div1 {
+			height: 100px;
+			width: 300px;
+			padding: 10px;
+			margin: 3px;
+			border: 1px solid blue;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="div1"></div>
+	<br>
+
+	<button>Tela de dimensões de uma div</button>
+    <p>Olá, programadores!</p>
+    <p>Sejam muito bem vindos!</p>
+	<p>outerWidth() - retorna a largura de um elemento (inclui preenchimento e borda).</p>
+	<p>outerHeight() - retorna a altura do elemento (inclui preenchimento e borda).</p>
+
+</body>
+</html>
